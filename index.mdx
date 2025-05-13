@@ -17,6 +17,55 @@ description: "An open source Merchant of Record with 20% lower fees"
 
 Polar is purpose-built for developers, designers and startups to monetize their digital products and software with ease.
 
+<AccordionGroup>
+  <Accordion icon="github" title="Clone your docs locally">
+    During the onboarding process, we created a repository on your Github with
+    your docs content. You can find this repository on our
+    [dashboard](https://dashboard.mintlify.com). To clone the repository
+    locally, follow these
+    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+    in your terminal.
+  </Accordion>
+  <Accordion icon="rectangle-terminal" title="Preview changes">
+    Previewing helps you make sure your changes look as intended. We built a
+    command line interface to render these changes locally. 
+    1. Install the
+    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
+    documentation changes locally with this command: ``` npm i -g mintlify ```
+    2. Run the following command at the root of your documentation (where
+    `docs.json` is): ``` mintlify dev ```
+    <Note>
+      If you’re currently using the legacy ```mint.json``` configuration file, please update the Mintlify CLI:
+
+
+      ```npm i -g mintlify@latest```
+      And run the new upgrade command in your docs repository:
+
+      ```mintlify upgrade```
+      You should now be using the new ```docs.json``` configuration file. Feel free to delete the ```mint.json``` file from your repository.
+    </Note>
+    ### Inline Code
+
+To denote a `word` or `phrase` as code, enclose it in backticks (`).
+
+```
+To denote a `word` or `phrase` as code, enclose it in backticks (`).
+```
+
+### Code Block
+
+Use [fenced code blocks](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) by enclosing code in three backticks and follow the leading ticks with the programming language of your snippet to get syntax highlighting. Optionally, you can also write the name of your code after the programming language.
+
+```java HelloWorld.java
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+  </Accordion>
+</AccordionGroup>
+
 <CardGroup cols={2}>
   <Card title="Edit Your Docs" icon="pen-to-square" href="https://mintlify.com/docs/quickstart">
     Get your docs set up locally for easy development
